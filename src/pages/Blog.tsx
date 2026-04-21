@@ -19,7 +19,7 @@ const Blog = () => {
         >
           <h1 style={{ fontFamily: 'Inter, sans-serif', fontWeight: "bold", color: '#444444' }} className="font-heading font-semibold text-[50px] md:text-[50px] mb-2 tracking-tight">Wellness Blog</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore evidence-based insights, nutrition tips, and wellness strategies
+            Explore Evidence-based Insights, Nutrition Tips, and Wellness Strategies
           </p>
         </motion.div>
 
@@ -36,7 +36,6 @@ const Blog = () => {
                 <div className="aspect-video md:aspect-[4/3]">
                   <BlurImage
                     src={blogPosts[0].image}
-                    srcSmall={blogPosts[0].imageSmall}
                     alt={blogPosts[0].title}
                     className="w-full h-full"
                   />
@@ -62,7 +61,9 @@ const Blog = () => {
                   </div>
 
                   <Button asChild size="sm">
-                    <Link to={`/blog/${blogPosts[0].id}`}>Read Full Article</Link>
+                    <Link to={blogPosts[0].url} target="_blank" rel="noopener noreferrer">
+                      Read Full Article
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -84,7 +85,6 @@ const Blog = () => {
                 <div className="aspect-video">
                   <BlurImage
                     src={post.image}
-                    srcSmall={post.imageSmall}
                     alt={post.title}
                     className="w-full h-full"
                   />
@@ -107,7 +107,9 @@ const Blog = () => {
                   </div>
                   
                   <Button asChild variant="outline" className="w-full mt-4">
-                    <Link to={`/blog/${post.id}`}>Read More</Link>
+                    <Link to={post.url} target="_blank" rel="noopener noreferrer">
+                      Read More
+                    </Link>
                   </Button>
                 </div>
               </Card>

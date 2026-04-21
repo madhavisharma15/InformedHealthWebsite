@@ -50,9 +50,9 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route element={<BareLayout />}>
+          {/* <Route element={<BareLayout />}>
             <Route path="/workshops/glucose-biohacking-masterclass" element={<GlucoseBiohackingMasterclass />} />
-          </Route>
+          </Route> */}
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

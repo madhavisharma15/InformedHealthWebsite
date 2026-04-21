@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Youtube, Mail, Phone } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import VisitorCounter from "./VisitorCounter";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -47,14 +48,11 @@ const Footer = () => {
             </p>
 
             <motion.a
-              href="https://wa.me/918826504708"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-3 px-10 py-5 bg-white text-[#6cc52e] text-l rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 border-4 border-[#6cc52e]/20"
             >
-              <FontAwesomeIcon icon={faWhatsapp} size="lg" className="text-[#6cc52e]" />
               <p>Book an Appointment</p>
             </motion.a>
           </motion.div>
@@ -193,6 +191,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-8 pt-4 border-t border-black/20 text-center">
           <p className="text-sm text-black-300">
+            <VisitorCounter />
+            <p className="mt-2 mb-2"></p>
             © {new Date().getFullYear()} Madhavi K. Sharma. All rights reserved.
           </p>
         </div>
