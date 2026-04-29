@@ -117,7 +117,7 @@ const Modal = ({
             initial={{ scale: 0.95, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
-            className="bg-white rounded-lg shadow-xl p-4 sm:p-6 max-w-lg w-full relative"
+            className="bg-white rounded-lg shadow-xl p-4 sm:p-6 max-w-4xl w-full relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button onClick={onClose} className="absolute top-3 right-3 p-2 rounded-full hover:bg-gray-100" aria-label="Close modal">
@@ -137,23 +137,30 @@ const Home = () => {
     content: string;
     rating: number;
     name: string;
-    date: string;
   } | null>(null);
 
   const testimonialData = [
     {
       id: 1,
-      content: "I was referred to informed health by my physiotherapist at gk2. I wasn't sure if how much Madhavi would be able to help or guide me. I have been with her for 5 months now and I can surely recommend her guidance and help in not just weight loss but in guiding for a healthier mind set. She just doesn't give you a diet plan but explains reasons and scientific explanations. I got the feel that she recommends only what she practices herself or had worked for her clients in past.Her guidance modified my lipid profile, led to weight loss and better sustainable food habits.She is driven and passionate about helping her clients. Her bubbly personality adds to the outcomes. I wish her all the luck.",
+      content: "Madhavi Sharma’s Informed Health Programme continues to be my lifeline to good health, and a centred mind and spirit. Her guidance over 14 weeks taught me to practice eating well, right, and on time. This consciousness is so well embedded in my daily life and its rhythms today that I cannot imagine living or eating any other way. What caught my attention was her emphasis on addressing health concerns, particularly high sugar and insulin resistance, by first focusing on the gut, understanding the ‘why’s’, ‘’where’s’, ‘what’s’, ‘when’s’, and ‘how’s’ of basic elements of food consumption and plate portions, and the right and correct way of exercising. Her diligence in paying attention to every meal, her weekly follow-ups, her ready suggestions with alternatives, and patience with questions are remarkable, and her quirky humour makes her course workable and an enjoyable ride.",
       rating: 5,
-      name: "Amita Gupta",
-      date: "3 years ago",
+      name: "Chitra Gopalakrishnan",
     },
     {
       id: 2,
-      content: "I had the privilege to attend 3 day workshop on Gut Health by Madhvi & she’s so immaculate & precise to give all the information & bio hacks on gut health ! It was amazing 3 day session thanks a lot Madhvi , you saw to it that you cover all aspects of health ( mental / physical & emotional) .. keep up the super work .",
+      content: `Dr. Madhavi Sharma has been a God-sent mentor for me at a time when I was searching for the right guidance to reverse diabetes and other health issues naturally.
+      
+      Before meeting her, I had tried intermittent fasting — one meal a day and two meals a day — but I couldn't maintain consistency. This often led to overeating, post-meal fatigue, and low energy throughout the day.
+    
+    She took the time to thoroughly understand my health concerns, lifestyle, habits, and goals, and then designed a realistic and sustainable approach that truly worked for me.
+    
+    Thanks to her guidance, my health has improved significantly, my energy levels are higher, and I feel lighter while walking and moving around. My post-meal blurry vision has also reduced noticeably.
+    
+    Every recommendation she made was supported by clear explanations, and the changes felt manageable rather than restrictive. She focuses on long-term health rather than quick fixes and genuinely cares about her client's progress and well-being.
+    
+    With her approach, we are not just getting healthier today, we are building a strong foundation for a healthier future. I am deeply thankful for the transformative difference she has made in my health.`,
       rating: 5,
-      name: "Tushar Shain",
-      date: "a year ago",
+      name: "Suraj Reddy",
     },
   ];
 
@@ -202,7 +209,7 @@ const Home = () => {
 
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="hidden lg:block absolute top-6 right-6 bg-secondary/90 text-secondary-foreground p-3 lg:p-6 rounded-xl shadow-lg backdrop-blur-sm">
-            <p className="font-heading font-bold text-xl md:text-2xl">500+</p>
+            <p className="font-heading font-bold text-xl md:text-2xl">1500+</p>
             <p className="text-xs md:text-sm">Happy Clients</p>
           </div>
 
@@ -418,8 +425,6 @@ const Home = () => {
                     )}
                   </p>
 
-                  <p className="text-xs text-muted-foreground mb-4">{testimonial.date}</p>
-
                   <div className="flex items-center pt-4 border-t border-gray-100">
                     <Avatar name={testimonial.name} />
                     <div className="ml-3">
@@ -453,7 +458,6 @@ const Home = () => {
               <Avatar name={selectedTestimonial.name} />
               <div>
                 <h3 className="font-semibold text-lg">{selectedTestimonial.name}</h3>
-                <p className="text-sm text-muted-foreground">{selectedTestimonial.date}</p>
               </div>
             </div>
             <div className="flex mb-2">

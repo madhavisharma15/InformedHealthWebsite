@@ -2,12 +2,11 @@ import { useState, useEffect } from 'react';
 
 interface BlurImageProps {
   src: string;
-  srcSmall: string;
   alt: string;
   className?: string;
 }
 
-const BlurImage = ({ src, srcSmall, alt, className = '' }: BlurImageProps) => {
+const BlurImage = ({ src, alt, className = '' }: BlurImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -26,7 +25,7 @@ const BlurImage = ({ src, srcSmall, alt, className = '' }: BlurImageProps) => {
           transition-opacity duration-300
           ${isLoaded ? 'opacity-0' : 'opacity-100 blur-md'}
         `}
-        style={{ backgroundImage: `url(${srcSmall})` }}
+        style={{ backgroundImage: `url(${src})` }}
       />
       <img
         src={src}

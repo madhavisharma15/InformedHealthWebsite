@@ -15,7 +15,7 @@ export interface Workshop {
   image: string;
   capacity: number;
   enrolled: number;
-  internalRoute: string;
+  // internalRoute: string;
 }
 
 export const workshops: Workshop[] = [
@@ -30,7 +30,7 @@ export const workshops: Workshop[] = [
     image: w2,
     capacity: 25,
     enrolled: 12,
-    internalRoute: "/workshops/glucose-biohacking-masterclass",
+    // internalRoute: "/workshops/glucose-biohacking-masterclass",
   },
   {
     id: "2",
@@ -43,7 +43,7 @@ export const workshops: Workshop[] = [
     image: w1,
     capacity: 20,
     enrolled: 18,
-    internalRoute: "/services/gut-biohacking-masterclass",
+    // internalRoute: "/services/gut-biohacking-masterclass",
   },
 ];
 
@@ -92,22 +92,24 @@ export interface BlogPost {
   date: string;
   category: string;
   image: string;
-  imageSmall: string;
   readTime: string;
+  tags?: string[];
+  url: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "5 Signs Your Gut Health Needs Attention",
-    excerpt: "Discover the warning signs that indicate your digestive system needs support and what you can do about it.",
+    title: "The Flip side of Fad Diets",
+    excerpt: "If skipping meals is a bad idea, then how about eating low carb meals? And if you are not the soup and salad type, then you could attempt the keto diet, it’s the latest cool thing! Incase the thought of egg yellows and cream leave your lipid profiles soaring, try going high protein instead. Just remember that you can always do intermittent fasting and detox diets in between or with all the other permutation and combinations! Phew!",
     content: "Full blog content would go here...",
     author: "Madhavi K. Sharma",
-    date: "2025-10-28",
-    category: "Gut Health",
-    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8",
-    imageSmall: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=100",
+    date: "2026-04-18",
+    category: "Fad Diets",
+    image: "https://lh3.googleusercontent.com/d/19DPcF8WCDhz5n-hSmgChjWcOA3pfyo2V",
     readTime: "5 min read",
+    url: "https://informedhealthblog.blogspot.com/2026/04/the-flipside-of-fad-diets-if-skipping.html",
+    tags: ["fad diets", "digestive wellness", "health tips"],
   },
   {
     id: 2,
@@ -118,8 +120,9 @@ export const blogPosts: BlogPost[] = [
     date: "2025-10-25",
     category: "Nutrition",
     image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352",
-    imageSmall: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=100",
     readTime: "7 min read",
+    tags: ["nutrition", "anti-inflammatory", "health tips"],
+    url: "https://nutrition.informedhealth.in/the-power-of-anti-inflammatory-foods",
   },
   {
     id: 3,
@@ -130,8 +133,9 @@ export const blogPosts: BlogPost[] = [
     date: "2025-10-20",
     category: "Education",
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061",
-    imageSmall: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=100",
     readTime: "6 min read",
+    tags: ["functional nutrition", "health education", "wellness"],
+    url: "https://nutrition.informedhealth.in/understanding-functional-nutrition",
   },
 ];
 
