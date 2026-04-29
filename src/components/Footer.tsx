@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import VisitorCounter from "./VisitorCounter";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -191,8 +190,6 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-8 pt-4 border-t border-black/20 text-center">
           <p className="text-sm text-black-300">
-            <VisitorCounter />
-            <p className="mt-2 mb-2"></p>
             © {new Date().getFullYear()} Madhavi K. Sharma. All rights reserved.
           </p>
         </div>

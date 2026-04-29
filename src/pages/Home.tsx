@@ -209,7 +209,7 @@ const Home = () => {
 
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="hidden lg:block absolute top-6 right-6 bg-secondary/90 text-secondary-foreground p-3 lg:p-6 rounded-xl shadow-lg backdrop-blur-sm">
-            <p className="font-heading font-bold text-xl md:text-2xl">500+</p>
+            <p className="font-heading font-bold text-xl md:text-2xl">1500+</p>
             <p className="text-xs md:text-sm">Happy Clients</p>
           </div>
 
