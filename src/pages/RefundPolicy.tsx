@@ -26,17 +26,17 @@ const RefundPolicy = () => {
 
           <Card className="p-8">
             <div className="prose prose-lg max-w-none">
-              <h2 className="font-heading font-bold text-2xl mt-8 mb-4">1. Consultation Services</h2>
+              <h2 className="font-heading font-bold text-2xl mt-8 mb-4">1. Consultation Consult</h2>
               <p className="text-muted-foreground mb-4">
-                All fees paid for consultations, workshops, and program packages are non-refundable and non-transferable.
+                All fees paid for consultationations, workshops, and program packages are non-refundable and non-transferable.
               </p>
               <p className="text-muted-foreground mb-6 italic">
                 <strong>Commitment:</strong> By enrolling in a program or booking a session, you acknowledge that the fee is a commitment to your health journey and cannot be reclaimed.
               </p>
 
-              <h2 className="font-heading font-bold text-2xl mt-8 mb-4">2. Program Packages & Consultations</h2>
+              <h2 className="font-heading font-bold text-2xl mt-8 mb-4">2. Program Packages & Consultation</h2>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-6">
-                <li>Once a program has commenced or a consultation is booked, no refunds will be issued for "change of mind" or partial completion.</li>
+                <li>Once a program has commenced or a consultationation is booked, no refunds will be issued for "change of mind" or partial completion.</li>
                 <li>Sessions must be utilized within the stipulated program duration (e.g., 12–14 weeks); unused sessions will not be refunded or carried forward.</li>
               </ul>
 

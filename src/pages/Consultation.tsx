@@ -23,7 +23,7 @@ const programmeData = [
 			"Defined metabolic health parameters to track progress",
 			"Weekly 30-minute follow-up sessions",
 		],
-		internalRoute: "/services/gut-reset-programme",
+		internalRoute: "/consultation/gut-reset-programme",
 	},
 	{
 		title: "Glucose Biohacking",
@@ -41,7 +41,7 @@ const programmeData = [
 			"Defined metabolic health parameters for progress tracking",
 			"Weekly 30-minute follow-up sessions throughout the programme",
 		],
-		internalRoute: "/services/glucose-biohacking",
+		internalRoute: "/consultation/glucose-biohacking",
 	},
 	{
 		title: "Body Transformation",
@@ -58,11 +58,11 @@ const programmeData = [
 			"Defined metabolic health parameters for progress tracking",
 			"Weekly 30-minute follow-up sessions",
 		],
-		internalRoute: "/services/body-transformation",
+		internalRoute: "/consultation/body-transformation",
 	},
 ];
 
-const Services = () => {
+const Consult = () => {
 	return (
 		<div className="min-h-screen py-8">
 			<div className="container mx-auto px-4">
@@ -159,7 +159,7 @@ const Services = () => {
 							Before committing to a comprehensive recovery program, schedule a one-time functional nutrition assessment. This session is designed to evaluate your unique metabolic bio-markers, review persistent symptoms, and map out a data-driven path for your long-term root-cause healing journey.
 						</p>
 						<Button asChild size="lg" className="font-semibold bg-secondary hover:bg-secondary/80">
-							<Link to="/contact?type=one-time-consultation">
+							<Link to="/contact?type=one-time-consultationation">
 								Book Your Expert Consultation Now
 							</Link>
 						</Button>
@@ -224,4 +224,4 @@ const Services = () => {
 	);
 };
 
-export default Services;
+export default Consult;
