@@ -159,7 +159,7 @@ const Consult = () => {
 							Before committing to a comprehensive recovery program, schedule a one-time functional nutrition assessment. This session is designed to evaluate your unique metabolic bio-markers, review persistent symptoms, and map out a data-driven path for your long-term root-cause healing journey.
 						</p>
 						<Button asChild size="lg" className="font-semibold bg-secondary hover:bg-secondary/80">
-							<Link to="/contact?type=one-time-consultationation">
+							<a href="https://imjo.in/FmkWhv">
 								Book Your Expert Consultation Now
 							</a>
 						</Button>
