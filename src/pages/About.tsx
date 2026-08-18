@@ -416,7 +416,7 @@ const About = () => {
           className="mt-12 text-center"
           >
             <Button asChild size="lg">
-              <Link to="/services" style={{fontSize: '18px'}}>Kickstart your Health Journey</Link>
+              <Link to="/consultation" style={{fontSize: '18px'}}>Kickstart your Health Journey</Link>
               </Button>
         </motion.div>
       </div>

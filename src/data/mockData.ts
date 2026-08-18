@@ -43,7 +43,7 @@ export const workshops: Workshop[] = [
     image: w1,
     capacity: 20,
     enrolled: 18,
-    // internalRoute: "/services/gut-biohacking-masterclass",
+    // internalRoute: "/consultation/gut-biohacking-masterclass",
   },
 ];
 
@@ -147,7 +147,7 @@ export interface Service {
   icon: string;
 }
 
-export const services: Service[] = [
+export const consultation: Service[] = [
   {
     id: "1",
     title: "Body Transformation",

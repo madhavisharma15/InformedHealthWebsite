@@ -275,13 +275,13 @@ const Grievance = () => {
           <div className="prose prose-sm max-w-none text-muted-foreground">
             <p className="text-xs italic mb-6">Last Updated: March 1, 2026</p>
             
-            <p className="mb-6">By enrolling in any program or booking a consultation with Informed Health, you agree to the following legally binding terms:</p>
+            <p className="mb-6">By enrolling in any program or booking a consultationation with Informed Health, you agree to the following legally binding terms:</p>
 
             <h3 className="font-bold text-lg mt-6 mb-3">1. Scope of Service & Medical Liability</h3>
             <ul className="space-y-2 mb-6">
               <li><strong>Not a Substitute for Medical Care:</strong> I acknowledge that the information provided by Informed Health during the nutrition program is not a substitute for professional medical advice, diagnosis, or treatment.</li>
               <li><strong>Prescription Adherence:</strong> You are advised to continue with your prescriptions as provided by your healthcare practitioner at all times.</li>
-              <li><strong>Mandatory Consultation:</strong> You are required to remain in consultation with your doctor or primary healthcare provider throughout the program.</li>
+              <li><strong>Mandatory Consultation:</strong> You are required to remain in consultationation with your doctor or primary healthcare provider throughout the program.</li>
               <li><strong>Voluntary Enrollment:</strong> I acknowledge that I have enrolled in the nutrition program at my own will, and I have not been coerced or forced to join.</li>
             </ul>
 

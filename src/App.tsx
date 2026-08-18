@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Services from "./pages/Services";
+import Consult from "./pages/Consultation";
 import Workshops from "./pages/Workshops";
 import Testimonials from "./pages/Testimonials";
 import Blog from "./pages/Blog";
@@ -56,10 +56,10 @@ const App = () => (
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/gut-reset-programme" element={<BiohackYourGut />} />
-            <Route path="/services/glucose-biohacking" element={<GlucoseBiohacking />} />
-            <Route path="/services/body-transformation" element={<BodyTransformation />} />
+            <Route path="/consultation" element={<Consult />} />
+            <Route path="/consultation/gut-reset-programme" element={<BiohackYourGut />} />
+            <Route path="/consultation/glucose-biohacking" element={<GlucoseBiohacking />} />
+            <Route path="/consultation/body-transformation" element={<BodyTransformation />} />
             <Route path="/workshops" element={<Workshops />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/blog" element={<Blog />} />
