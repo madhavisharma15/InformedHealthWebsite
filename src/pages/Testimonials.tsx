@@ -381,7 +381,7 @@ const Testimonials = () => {
 				>
 					<div className="grid md:grid-cols-3 gap-8 text-center">
 						<div>
-							<p className="font-heading font-bold text-5xl mb-2">500+</p>
+							<p className="font-heading font-bold text-5xl mb-2">7500+</p>
 							<p className="opacity-90">Happy Clients</p>
 						</div>
 						<div>
