@@ -116,9 +116,13 @@ const Workshops = () => {
                         ) : isPast ? (
                           <span>Completed</span>
                         ) : (
-                          <a href="https://nutrition.informedhealth.in/defeat-diabetes-naturally" target="_blank" rel="noopener noreferrer">
-                            Register Now
-                          </a>
+                          workshop.internalRoute ? (
+                            <Link to={workshop.internalRoute}>Register Now</Link>
+                          ) : (
+                            <a href="https://nutrition.informedhealth.in/defeat-diabetes-naturally" target="_blank" rel="noopener noreferrer">
+                              Register Now
+                            </a>
+                          )
                         )}
                       </Button>
                     </div>

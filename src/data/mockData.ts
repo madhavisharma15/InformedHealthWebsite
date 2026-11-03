@@ -2,7 +2,7 @@ import testimonialImage from "../../public/About-image.jpg"
 import w1 from "@/assets/gut.jpg"
 import w2 from "@/assets/diabetes.jpg"
 
-export const UPCOMING_WORKSHOP_DATETIME = "2026-08-15T11:00:00+05:30"; // 15th Aug 2026, 11:00am IST
+export const UPCOMING_WORKSHOP_DATETIME = "2027-08-15T11:00:00+05:30"; // 15th Aug 2027, 11:00am IST
 
 export interface Workshop {
   id: string;
@@ -15,7 +15,7 @@ export interface Workshop {
   image: string;
   capacity: number;
   enrolled: number;
-  // internalRoute: string;
+  internalRoute?: string;
 }
 
 export const workshops: Workshop[] = [
@@ -23,21 +23,21 @@ export const workshops: Workshop[] = [
     id: "1",
     title: "Glucose Biohacking Masterclass",
     description: "Defeat diabetes naturally without medicines using the GBH system. Learn the exact strategies that only the top 1% use to live a needle-free, pill-free, and complication-free life.",
-    date: "15th Aug 2026",
+    date: "15th Aug 2027",
     dateTime: UPCOMING_WORKSHOP_DATETIME,
     duration: "2 hours",
     price: 99,
     image: w2,
     capacity: 25,
     enrolled: 12,
-    // internalRoute: "/workshops/glucose-biohacking-masterclass",
+    internalRoute: "/workshops/glucose-biohacking-masterclass",
   },
   {
     id: "2",
     title: "Gut Biohacking Masterclass",
     description: "Get permanent relief from acidity, bloating, and gas naturally without medicines. Discover proven strategies to restore digestive balance and achieve lasting wellness.",
-    date: "15th Aug 2026",
-    dateTime: "2026-08-15T11:00:00+05:30",
+    date: "15th Aug 2027",
+    dateTime: "2027-08-15T11:00:00+05:30",
     duration: "3 days",
     price: 299,
     image: w1,
